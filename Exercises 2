@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int swap(int &, int &); //prototype reference parameter (&)
+int main()
+{
+    int swap(int &x, int &y) {
+         int temp
+         temp = x;
+         x = y;
+         y = temp;
+         if(x > y) return x;
+         else return y;
+         
+         
+         
+#include<iostream>
+using namespace std;
+void swap(int &, int &); //prototype reference parameter (&)
+int main()
+{
+    int swap(int &x, int &y); {
+        int x, y, temp;
+         temp = x;
+         x = y;
+         y = temp;
+         if(x > y) return x;
+         else return y; }
+         int a, b;
+         swap (a, b);
+         cout<<a;
+         cout<<b;
+system("pause");
+return 0;
+}
