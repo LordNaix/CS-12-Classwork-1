@@ -1,0 +1,24 @@
+//value parameters and reference parameters uses
+#include<iostream>
+using namespace std;
+void maxmin(int a, int b, int &lar, int &sma)
+{
+    if (a>b) { lar = a;
+               sm = b; }
+    else {lar = b;
+         sm = a; }
+         return;
+}
+int main()
+{
+    int a, b, big, small;
+    cout<<"Enter 2 numbers: ";
+    cin>>a>>b;
+    maxmin(a, b, big, small);
+    cout<<a<<" "<<b<<end;
+    cout<<big<" "<<small;
+    
+    system("pause");
+    return 0;
+}
+    
