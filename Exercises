@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a, b, total;
+    cout<<"Enter starting and skip values ";
+    cin>>a>>b;
+    while(a > b){
+    cout<<"First num must be less than or equal second num";
+    cin>>a>>b; }
+    total = sumsq(a, b);
+    cout<<"The sum of sq fnum "<<a<<"to "<<b<<" is "<<total;
+    system("pause");
+    return 0;
+}
