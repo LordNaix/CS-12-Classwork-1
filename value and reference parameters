@@ -1,0 +1,18 @@
+#include<iostream>
+void maxL(int [], int, int) //prototype
+void maxL(int arr[], int ct, int big) {
+     big = arr[0];
+     for(int i=1; i<ct; i++) {
+             if (big < arr[i]) big = arr[i]; 
+             return big; }
+             
+
+using namespace std;
+int main()
+{
+    int myarray[10], num = 10, large;
+    for(int n = 0; n<num; n++) {
+            cout<<"Enter integer ";
+            cin>>myarray[n]; }
+            large = maxL(myarray, num);
+            
