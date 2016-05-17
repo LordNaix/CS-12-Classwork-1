@@ -1,0 +1,19 @@
+//CS Text Review #2 
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int num;
+    bool tnt;
+    srand(ctime(0));
+    tnt = true;
+    for(int i; i<=20; i++) {
+            num = 17+rand()%13
+    if(num%6==0||num%4==0) 
+    cout<<"Multiple of 6 or 4";
+    tnt = false;
+    else if(num%3==0||num%5==0)
+    cout<<"Multiple of 3 or 5";
+    tnt = false;
+    
