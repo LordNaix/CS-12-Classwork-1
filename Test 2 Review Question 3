@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num[7] = {1, 3, 5, 7, 9, 11, 13}
+	for(i=0; i<7 i++) {
+		num = num+1;
+	}
+	cout<<"Value"<<setw(7)<<endl;
+	for(int j=0; j<7 j++) {
+		cout<<setw(7)<<num<<endl;
+	}
+	system("pause");
+	return 0;
+}
