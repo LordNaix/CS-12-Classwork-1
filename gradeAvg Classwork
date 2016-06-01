@@ -1,0 +1,44 @@
+#include<iostream>
+#include<cmath>
+void readnum(int [], int &);
+void outnum(int [], int);
+using namespace std;
+int main()
+{
+  int num[numels], int numels;
+  readnum(num, &numels);
+  outnum(num, numels);
+  marks(num, numels, gmk, lmk, emk, double avg);
+  cout<<"done";
+  avg = readnum(num, numels);
+  int gmk = 0, lmk = 0, emk = 0;
+  cout<<"avg = "<<avg<<endl;
+  
+  system("pause");
+  return 0;
+}
+
+double readnum(int numarr, int &els)
+{
+  cout<<"how many numbers are there? ";
+  cin>>els;
+  for(int i=0; i<els; i++) {
+  cout<<"enter pos "<<i<<" value";
+  cin>>numarr[i];
+  }
+  return; 
+}
+
+void outnum(int num, int nels) {
+return; 
+}
+
+void marks(int arr[], int ct, int &mkg, int &mkl, int &mke, double avg) 
+{
+  for(int i=0; i<ct; i++) {
+    if(arr[i]>avg) mkg++
+    else if(arr[i]<avg) mkl++
+    else mke++
+    }
+    return;
+  }
