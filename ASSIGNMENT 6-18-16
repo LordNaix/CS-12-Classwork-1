@@ -1,0 +1,49 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+   int   x = 0;
+   int   y;
+
+   int  func(int &,  int) ;
+
+  int  main( ) {
+     int x=3,  n,  k =2, m = 3 ;
+      x++ ;
+      y = 2;
+  n = func(k, m);
+cout << n << endl;  //line 1 output
+cout << k << endl;  // line 2 output
+cout << m <<  endl; // line 3 output
+cout << y << endl ; // line 4 output
+  k =3;  m =4;
+ x  = func(m, k );
+cout << x<< endl; // line 5
+cout << :: x  << endl; // line 6
+cout << y << endl;  // line 7 
+cout << m << endl ;  // line 8
+{
+               int   x = 2,  y=2;
+               if( ++x >3 || y++ <= 3)
+                    cout  << x - y  <<"\tTT";
+                 else  cout  << y <<"\tTT" ;
+         x = 2;  y=2;
+               if( ++x >= 3 &&  y++ <= 3)
+                     cout <<x+y  ;
+               else  cout << y  ; 
+
+                x = 2;  y=2;
+               if( ++x >= 3 &&  y++ <= 3)
+                     cout <<  x+y  ;
+               else  cout << y  ; 
+
+}
+
+system("pause");
+return 0;
+}
+
+int  func(int  &a , int b) {
+  a = a * 5;0;
+  ++b ;
+y = a + y;
+ return  b;   }
